@@ -1,0 +1,5 @@
+---
+- name: learnbook
+  hosts: localhost
+  roles:
+    - stuff

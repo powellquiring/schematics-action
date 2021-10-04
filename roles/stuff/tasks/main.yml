@@ -1,0 +1,7 @@
+---
+- name: stuff role in stuff/main.yml
+  stuffer:
+    msg: hellostuffrolepython
+    # msg: " {{ groups }} "
+
+- shell: "echo sttuff "
