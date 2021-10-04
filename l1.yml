@@ -2,4 +2,7 @@
 - name: l1
   hosts: localhost
   tasks:
-    - shell: "echo l1"
+    - shell: "echo {{item}} "
+      loop: "{{groups['webservers']}} "
+    - shell: "echo {{item}} "
+      loop: "{{groups['dbservers']}} "
