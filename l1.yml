@@ -1,6 +1,6 @@
 ---
 - name: l1
-  hosts: localhost
+  # hosts: localhost
   tasks:
     - shell: "echo {{item}} "
       loop: "{{groups['webservers']}} "
