@@ -1,8 +1,6 @@
 ---
 - name: l1
-  # hosts: localhost
+  hosts: all
+  remote_user: root
   tasks:
-    - shell: "echo {{item}} "
-      loop: "{{groups['webservers']}} "
-    - shell: "echo {{item}} "
-      loop: "{{groups['dbservers']}} "
+    - shell: "hostname"
